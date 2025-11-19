@@ -13,13 +13,13 @@
             <a class="navbar-brand" href="home.html">Games Rating</a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"><span class="navbar-toggler-icon"></span></button> -->
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="sub1.html">Sub1</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="sub1.html">Action Games</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="sub2.html">Sub2</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="sub2.html">Multiplayer Games</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="sub3.html">Sub3</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="sub3.html">Retro Games</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="our-story.html">Our Story</a> </li>
@@ -38,12 +38,12 @@
     <section class="py-5">
         <div class="container">
             <h2 class="mb-4 text-center">What's on fire🔥🔥</h2>
-            <div class="row g-4">
+            <div class="row g-4 pb-3">
                 <div class="col-md-4"> <!-- take copy from this until...-->
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title text-center">Elden Ring</h5>
-                            <img src="https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2024/12/mixcollage-08-dec-2024-02-50-pm-6945-1.jpg" class="img-fluid">
+                            <img src="images/mixcollage-08-dec-2024-02-50-pm-6945-1.jpg" class="img-fluid imgs">
                             <p class="card-text">description of the game</p>
                             <p class="fw-bold mb-0">Rating: 9.2 / 10</p>
                         </div>
@@ -68,7 +68,46 @@
                     </div>
                 </div>
             </div>
+            <section id="signup" class="py-5 bg-light">
+                <div class="container" style="max-width: 600px;">
+                    <h2 class="text-center mb-4">Create account</h2>
+                    <p class="text-center mb-4">Sign up for the latest gaming rates</p>
+                    <form id="form">
+                        <div class="mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control formt" id="firstname" placeholder="Enter your first name" required>
+                            <small id="FirstErr" class="text-danger"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control formt" id="lastname" placeholder="Enter your last name" required>
+                            <small id="LastErr" class="text-danger"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control formt" id="email" placeholder="Enter your email" required>
+                            <small id="EmailErr" class="text-danger"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control formt" id="phone" placeholder="Enter your phone number" required>
+                            <small id="PhoneErr" class="text-danger"></small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label formt">Password</label>
+                            <input type="password" class="form-control formt" id="password" placeholder="Enter your password" required>
+                            <small id="PassErr" class="text-danger"></small>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 signup" onclick="handleSignup()">Sign Up</button>
+                    </form>
+                </div>
+            </section>
         </div>
     </section>
+    <div id="notification" class="hidden">
+        <span id="notification-message">Message</span>
+        <button id="close-notification">&times;</button>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>
