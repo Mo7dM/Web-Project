@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Database</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand Home" href="home.html">Game Station</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="sub1.html">Top News</a></li>
+                <li class="nav-item"><a class="nav-link active" href="sub2.html">Game Database</a></li>
+                <li class="nav-item"><a class="nav-link" href="sub3.html">Game Rating</a></li>
+                <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="makeof.html">Make of Site</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="py-4 bg-secondary text-light text-center">
+        <h1 class="display-5">Game Database</h1>
+        <p class="lead mb-0">Most played, trending, and new releases in one place</p>
+    </header>
+
+    <!-- MOST PLAYED -->
+    <section class="container py-5">
+        <h2 class="mb-3">Most Played Right Now</h2>
+        <p class="text-muted mb-3">Approximate peak player counts based on public data and community lists.</p>
+
+        <div class="table-responsive">
+            <table class="table game-table align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Game</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Platform</th>
+                        <th scope="col">Active Players</th>
+                        <th scope="col">Peak Players</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Counter-Strike 2</td>
+                        <td>Tactical Shooter</td>
+                        <td>PC</td>
+                        <td>800k+</td>
+                        <td><span class="badge bg-success">900k+</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Fortnite</td>
+                        <td>Battle Royale</td>
+                        <td>PC, Console, Mobile</td>
+                        <td>500k+</td>
+                        <td><span class="badge bg-success">650k+</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Valorant</td>
+                        <td>Tactical Shooter</td>
+                        <td>PC</td>
+                        <td>400k+</td>
+                        <td><span class="badge bg-success">750k+</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>GTA Online</td>
+                        <td>Open World</td>
+                        <td>PC, Console</td>
+                        <td>250k+</td>
+                        <td><span class="badge bg-success">300k+</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>League of Legends</td>
+                        <td>MOBA</td>
+                        <td>PC</td>
+                        <td>1M+</td>
+                        <td><span class="badge bg-success">1.1M+</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- TRENDING GAMES -->
+    <section class="container pb-5">
+        <h2 class="mb-3">Trending This Month</h2>
+        <p class="text-muted mb-4">Games gaining attention recently, either from updates, DLCs, or new releases.</p>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Elden Ring</h5>
+                        <p class="card-text">
+                            Back on top after a major DLC update. Players are returning for new bosses,
+                            zones, and late-game builds.
+                        </p>
+                        <ul class="list-unstyled mb-3">
+                            <li><strong>Genre:</strong> Action RPG</li>
+                            <li><strong>Platform:</strong> PC, PS5, Xbox</li>
+                            <li><strong>Tag:</strong> DLC Hype</li>
+                        </ul>
+                        <span class="badge bg-warning text-dark">Trending</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Hollow Knight: Silksong</h5>
+                        <p class="card-text">
+                            Still on everyone's wishlist. Every small news drop makes it spike again
+                            in searches and pre-release interest.
+                        </p>
+                        <ul class="list-unstyled mb-3">
+                            <li><strong>Genre:</strong> Metroidvania</li>
+                            <li><strong>Platform:</strong> PC, Switch, Xbox</li>
+                            <li><strong>Tag:</strong> Wishlist Favorite</li>
+                        </ul>
+                        <span class="badge bg-info text-dark">Highly Anticipated</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cyberpunk 2077</h5>
+                        <p class="card-text">
+                            Major patches and expansions turned it from a meme into a strong single-player
+                            RPG that keeps pulling players back.
+                        </p>
+                        <ul class="list-unstyled mb-3">
+                            <li><strong>Genre:</strong> Action RPG</li>
+                            <li><strong>Platform:</strong> PC, PS5, Xbox</li>
+                            <li><strong>Tag:</strong> Comeback Story</li>
+                        </ul>
+                        <span class="badge bg-success">Re-discovered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
