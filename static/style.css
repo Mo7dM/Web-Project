@@ -64,6 +64,9 @@
 }
 .Home{
     transition: transform 0.3s ease;
+    font-family: "Playwrite NO", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 .Home:hover{
     transform: scale(1.035);
