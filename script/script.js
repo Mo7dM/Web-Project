@@ -61,6 +61,7 @@ const hideNotification = () => {
     notification.style.top = "0em";
     setTimeout(() => {
         notification.classList.add("hidden");
+        messageElement.classList.add("hidden")
     }, 300);
 };
 
