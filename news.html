@@ -12,11 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bangers&display=swap" rel="stylesheet">
 </head>
 
-<body onload="firstlyCheck()">
+<body class="news-page" onload="firstlyCheck()">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dangera">
         <div class="container">
-            <a class="navbar-brand Home bangers-regular" href="home.html">Game<br>&nbsp;&nbsp;&nbsp;Station</a>
+            <a class="navbar-brand Home bangers-regular" href="home.html"><span class="G">G</span>ame<br>&nbsp;&nbsp;&nbsp;<span class="S">S</span>tation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="news.html">Featured Today</a> </li>
             </ul>
@@ -35,66 +40,171 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link">Welcome <span id="user">Guest</span></a> </li>
             </ul>
+            </div>
         </div>
     </nav>
 
     <!-- HEADER -->
-    <header class="py-4 bg-secondary text-light text-center bg-info">
-        <h1 class="display-4">Top Gaming News</h1>
+    <header class="py-4 bg-info text-light text-center">
+        <h1 class="display-4 bitcount-prop-single-any ">Top Gaming News</h1>
         <p class="lead">Stay up-to-date with what's happening in the gaming world</p>
     </header>
 
     <!-- CONTENT -->
-    <section class="container py-5">
-        <div class="row g-4">
+    <section class="py-5 page-bg">
+        <div class="container">
 
-            <!-- News Card 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/eldenDLC.png" class="card-img-top news-img" alt="news image">
-                    <div class="card-body">
-                        <h5 class="card-title">Elden Ring DLC Release Date Confirmed</h5>
-                        <p class="card-text">
-                            FromSoftware has officially announced the long-awaited Elden Ring DLC.
-                            New bosses, new weapons, and an expanded map have been revealed.
-                        </p>
-                        <p class="text-muted">Published: Feb 2025</p>
+            <!-- ROW 1: BIG NEWS CARDS -->
+            <div class="row g-4 big-row">
+
+                <!-- Big Card 1 -->
+                <div class="col-md-3">
+                    <div class="news-card big">
+                        <img src="images/eldenDLC.png" class="news-img" alt="Elden Ring DLC">
+                        <div class="news-info">
+                            <h5>Elden Ring DLC Release Date Confirmed</h5>
+                            <p>
+                                FromSoftware has officially announced the long-awaited Elden Ring DLC,
+                                bringing new bosses, weapons, and expanded world areas.
+                            </p>
+                            <span class="text-light">Published: Feb 2025</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- News Card 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/gta6.png" class="card-img-top news-img" alt="news image">
-                    <div class="card-body">
-                        <h5 class="card-title">GTA 6 Trailer Breaks World Records</h5>
-                        <p class="card-text">
-                            Rockstar's new trailer for GTA 6 has smashed global viewership milestones,
-                            becoming the fastest gaming trailer to hit 50M views.
-                        </p>
-                        <p class="text-muted">Published: Jan 2025</p>
+                <!-- Big Card 2 -->
+                <div class="col-md-3">
+                    <div class="news-card big">
+                        <img src="images/gta6.png" class="news-img" alt="GTA 6 Trailer">
+                        <div class="news-info">
+                            <h5>GTA 6 Trailer Breaks World Records</h5>
+                            <p>
+                                The first official GTA 6 trailer became the fastest gaming trailer to hit 50M views.
+                            </p>
+                            <span class="text-light">Published: Jan 2025</span>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Big Card 3 -->
+                <div class="col-md-3">
+                    <div class="news-card big">
+                        <img src="images/fortnite.jpg" class="news-img" alt="Fortnite Chapter 6">
+                        <div class="news-info">
+                            <h5>Fortnite Chapter 6 Introduces New Mechanics</h5>
+                            <p>
+                                Epic Games has added updated movement and a redesigned map to shake up the gameplay meta.
+                            </p>
+                            <span class="text-light">Published: Mar 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Big Card 4 -->
+                <div class="col-md-3">
+                    <div class="news-card big">
+                        <img src="images/stateofplay.png" class="news-img" alt="State of Play">
+                        <div class="news-info">
+                            <h5>PlayStation State of Play Highlights</h5>
+                            <p>
+                                A new State of Play showcase revealed fresh trailers, indie hits,
+                                and major updates for upcoming PlayStation exclusives.
+                            </p>
+                            <span class="text-light">Published: Feb 2025</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- News Card 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/fortnite.jpg" class="card-img-top news-img" alt="news image">
-                    <div class="card-body">
-                        <h5 class="card-title">Fortnite Chapter 6 Introduces New Mechanics</h5>
-                        <p class="card-text">
-                            Epic Games has added new movement abilities, updated graphics,
-                            and a redesigned map in the latest season update.
-                        </p>
-                        <p class="text-muted">Published: Mar 2025</p>
+            <!-- ROW 2: HORIZONTAL SCROLL CARDS -->
+            <div class="scroll-row-container">
+                <div class="scroll-row">
+
+                    <!-- Scroll Card 1 -->
+                    <div class="news-card item">
+                        <img src="images/eldenDLC.png" class="news-img" alt="Elden Ring DLC">
+                        <div class="news-info">
+                            <h5>Elden Ring: Shadow Expansion</h5>
+                            <p>
+                                The DLC promises challenging new late-game content and fresh build options
+                                for returning Tarnished.
+                            </p>
+                            <span class="text-light">Feb 2025</span>
+                        </div>
                     </div>
+
+                    <!-- Scroll Card 2 -->
+                    <div class="news-card item">
+                        <img src="images/gta6.png" class="news-img" alt="GTA 6">
+                        <div class="news-info">
+                            <h5>Vice City Reimagined</h5>
+                            <p>
+                                GTA 6 returns to a modern Vice City with dense urban areas,
+                                dynamic AI, and a living open world.
+                            </p>
+                            <span class="text-light">Jan 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Card 3 -->
+                    <div class="news-card item">
+                        <img src="images/fortnite.jpg" class="news-img" alt="Fortnite Updates">
+                        <div class="news-info">
+                            <h5>Fortnite Meta Shifts Again</h5>
+                            <p>
+                                New mobility items and weapons have drastically changed the competitive landscape.
+                            </p>
+                            <span class="text-light">Mar 2025</span>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Card 4 -->
+                    <div class="news-card item">
+                        <img src="images/steamwintersale.png" class="news-img" alt="Steam Winter Sale">
+                        <div class="news-info">
+                            <h5>Steam Winter Sale Returns</h5>
+                            <p>
+                                Thousands of games are heavily discounted, with daily highlights and curated bundles.
+                            </p>
+                            <span class="text-light">Dec 2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Card 5 -->
+                    <div class="news-card item">
+                        <img src="images/xboxgamescom.png" class="news-img" alt="Xbox at Gamescom">
+                        <div class="news-info">
+                            <h5>Xbox Shines at Gamescom</h5>
+                            <p>
+                                New gameplay reveals, Game Pass additions, and surprise announcements
+                                excited fans worldwide.
+                            </p>
+                            <span class="text-light">Aug 2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Scroll Card 6 -->
+                    <div class="news-card item">
+                        <img src="images/stateofplay.png" class="news-img" alt="More News">
+                        <div class="news-info">
+                            <h5>More News Coming Soon</h5>
+                            <p>
+                                Stay tuned for more coverage on upcoming releases, events,
+                                and major gaming announcements.
+                            </p>
+                            <span class="text-light">2025</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

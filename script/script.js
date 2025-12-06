@@ -45,6 +45,7 @@ const showNotification = (message, isSuccess = true) => {
     messageElement.innerText = message;
     notification.style.backgroundColor = isSuccess ? "#4caf50" : "#f44336";
     notification.classList.remove("hidden");
+    messageElement.classList.remove("hidden");
     setTimeout(() => {
         notification.style.opacity = "1";
         notification.style.top = "1.25em";
