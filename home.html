@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Rating Site</title>
+    <title>Games Station</title>
+    <link rel="icon" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<body onload="firstlyCheck()">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
-            <a class="navbar-brand Home" href="home.html">Game Station</a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"><span class="navbar-toggler-icon"></span></button> -->
+            <a class="navbar-brand Home bangers-regular" href="home.html">Game<br>&nbsp;&nbsp;&nbsp;Station</a>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="news.html">Top News</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="news.html">Featured Today</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="database.html">Game Database</a> </li>
@@ -25,94 +28,134 @@
                 <li class="nav-item"> <a class="nav-link" href="ratings.html">Game Rating</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="makeof.html">Make of Site</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="our-story.html">Our Story</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="makeof.html">Make of Site</a> </li>
+                <li class="nav-item"> <a class="nav-link">Welcome <span id="user">Guest</span></a> </li>
             </ul>
-        </div>
     </nav>
-    <header class="py-3 bg-secondary text-light">
+
+    <!-- HEADER -->
+    <header class="py-3 bg-info text-light">
         <div class="container text-center">
-            <h1 class="display-3">Find Your Next Fav Game</h1>
-            <p class="lead mt-3">Simple rating games website</p>
+            <h1 class="display-3 montserrat-a">Explore the world of gaming</h1>
+            <p class="lead mt-3">Internet gaming website built by <span class="bitcount-prop-single-te">GAMERS</span></p>
         </div>
     </header>
+
+    <br>
+
+    <div class="container overview-box">
+        Game Station is a simple and accessible video game rating website designed to help players discover new titles and see how different games are received by the community. The site showcases a collection of popular games across multiple genres, each with a short description and a rating based on user-style reviews. While the ratings are pre-set, the layout reflects how real review platforms work, giving visitors a clear and organized way to explore trending games. Game Station also includes sections for news, database browsing, and our story, making it an easy starting point for anyone looking for their next favorite game.
+    </div>
+
+    <!-- SECTION -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-center">What's hot🔥🔥</h2>
-            <div class="row g-4 pb-3">
-                <div class="col-md-4"> <!-- take copy from this until...-->
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Elden Ring</h5>
-                            <img src="images/eldenRing.jpg" class="img-fluid imgs">
-                            <p class="card-text pt-2">Elden Ring is an action RPG set in a vast, dark fantasy open world where players, as Tarnished, embark on a quest to become the Elden Lord. Developed by FromSoftware, the game is known for its challenging combat, open-ended exploration, and rich lore, combining elements of the Souls series with a massive, player-driven experience.</p>
-                            <p class="fw-bold mb-0">Rating: 9.6 / 10</p>
-                        </div>
-                    </div>
-                </div> <!-- here -->
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">ARC Raiders</h5>
-                            <img src="images/arcRaiders.jpg" class="img-fluid imgs">
-                            <p class="card-text pt-2">ARC Raiders is a multiplayer, third-person, extraction adventure game where squads or solo players scavenge the surface of a post-apocalyptic Earth for resources while battling robotic enemies called ARCs and other human players</p>
-                            <p class="fw-bold mb-0">Rating: 8.6 / 10</p>
-                        </div>
-                    </div>
+            <h2 class="mb-4 text-center">Upcoming Events</h2>
+            <div id="carouselExampleIndicators" class="carousel slide rad" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Hollow Knight: Silksong</h5>
-                            <img src="images/silkSong.png" class="img-fluid imgs">
-                            <p class="card-text pt-2">Hollow Knight: Silksong is a 2D Metroidvania action game where you play as Hornet, a warrior who is kidnapped and taken to the mysterious kingdom of Pharloom.</p>
-                            <p class="fw-bold mb-0">Rating: 9.0 / 10</p>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active hover-card">
+                        <img class="d-block w-100 img1" src="images/stateofplay.png" alt="First slide">
+                        <div class="hover-text">
+                            <h2 class="bitcount-prop-single-any">State of Play</h2>
+                            <p>Tune in for a special episode featuring announcements and updates on games from Japan and across Asia.</p>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item hover-card">
+                        <img class="d-block w-100 img2" src="images/steamwintersale.png" alt="Second slide">
+                        <div class="hover-text">
+                            <h2 class="bitcount-prop-single-any">Steam Winter Sale</h2>
+                            <p>Huge discounts on your favorite titles.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item hover-card">
+                        <img class="d-block w-100 img3" src="images/xboxgamescom.png" alt="Third slide">
+                        <div class="hover-text">
+                            <h2 class="bitcount-prop-single-any">Xbox at Gamescom</h2>
+                            <p>Xbox returns to gamescom with over 20 titles to play, including the first public hands-on opportunities for multiple games.</p>
+                        </div>
+                    </div>
+
                 </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
+
+            <!-- SIGNUP -->
             <section id="signup" class="py-5 bg-light">
                 <div class="container" style="max-width: 600px;">
                     <h2 class="text-center mb-4">Create account</h2>
                     <p class="text-center mb-4">Sign up for the latest gaming rates</p>
+
                     <form id="form">
                         <div class="mb-3">
                             <label class="form-label">First Name</label>
-                            <input type="text" class="form-control formt" id="firstname" placeholder="Enter your first name" required>
+                            <input type="text" class="form-control formt" id="firstname" required>
                             <small id="FirstErr" class="text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control formt" id="lastname" placeholder="Enter your last name" required>
+                            <input type="text" class="form-control formt" id="lastname" required>
                             <small id="LastErr" class="text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control formt" id="email" placeholder="Enter your email" required>
+                            <input type="email" class="form-control formt" id="email" required>
                             <small id="EmailErr" class="text-danger"></small>
                         </div>
+
                         <div class="mb-3">
                             <label class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control formt" id="phone" placeholder="Enter your phone number" required>
+                            <input type="tel" class="form-control formt" id="phone" required>
                             <small id="PhoneErr" class="text-danger"></small>
                         </div>
+
                         <div class="mb-3">
-                            <label class="form-label formt">Password</label>
-                            <input type="password" class="form-control formt" id="password" placeholder="Enter your password" required>
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control formt" id="password" required>
                             <small id="PassErr" class="text-danger"></small>
                         </div>
+
                         <button type="button" class="btn btn-primary w-100 signup" onclick="handleSignup()">Sign Up</button>
                     </form>
                 </div>
             </section>
+
         </div>
     </section>
+
+    <!-- NOTIFICATION -->
     <div id="notification" class="hidden">
-        <span id="notification-message">Message</span>
+        <span id="notification-message" class="hidden">Message</span>
         <button id="close-notification">&times;</button>
     </div>
+
+    <!-- Bootstrap JS (REQUIRED for carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your Script -->
     <script src="script/script.js"></script>
+
 </body>
 </html>

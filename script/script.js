@@ -1,15 +1,29 @@
+function firstlyCheck() {
+    let localfirst = localStorage.getItem("firstname");
+    let locallast = localStorage.getItem("lastname");
+    let user = document.getElementById("user");
+
+    if (localfirst !== null && locallast !== null) {
+        user.textContent = localfirst+" "+locallast
+    }
+};
+
 const handleSignup = () => {
     let firstName = document.getElementById("firstname").value.trim();
     let lastName = document.getElementById("lastname").value.trim();
     let email = document.getElementById("email").value.trim();
     let mobile = document.getElementById("phone").value.trim();
     let password = document.getElementById("password").value.trim();
+    
 
     if (firstName.length >= 2 && lastName.length >= 2) {
         if (email.includes("@") && email.includes(".")) {
             if (mobile.length == 8 && !isNaN(mobile)) {
                 if (password.length >= 8) {
                     showNotification("Your account has been created successfully!", true);
+                    localStorage.setItem("firstname",firstName)
+                    localStorage.setItem("lastname",lastName)
+                    user.textContent = firstName+" "+lastName
                     document.getElementById("form").reset();
                 } else {
                     showNotification("Password must be at least 8 characters", false);
