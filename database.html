@@ -12,12 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body onload="firstlyCheck()">
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dangera">
         <div class="container">
             <a class="navbar-brand Home bangers-regular" href="home.html"><span class="G">G</span>ame<br>&nbsp;&nbsp;&nbsp;<span class="S">S</span>tation</a>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link" href="news.html">Featured Today</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="news.html">Game News</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"> <a class="nav-link" href="database.html">Game Database</a> </li>
@@ -32,26 +31,22 @@
                 <li class="nav-item"> <a class="nav-link" href="our-story.html">Our Story</a> </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <a class="nav-link">Welcome <span id="user">Guest</span></a> </li>
+                <li class="nav-item"> <a class="nav-link no-hover">Welcome <span id="user">Guest</span></a> </li>
             </ul>
         </div>
     </nav>
-
-    <!-- HEADER -->
     <header class="py-4 bg-secondary text-light text-center bg-info">
         <h1 class="display-5 montserrat-a">Game Database</h1>
         <p class="lead mb-0">Most played, trending, and new releases in one place</p>
     </header>
-
-    <!-- MOST PLAYED -->
     <section class="container py-5">
         <h2 class="mb-3">Most Played Right Now</h2>
         <p class="text-muted mb-3">Approximate peak player counts based on public data and community lists.</p>
 
-        <div class="table-responsive"style="border-radius: 10px;">
-            <table class="table game-table align-middle" >
+        <div class="table-responsive shadows2"style="border-radius: 10px;">
+            <table class="table table-striped table-hover align-middle game-table">
                 <thead>
-                    <tr>
+                    <tr >
                         <th scope="col">#</th>
                         <th scope="col">Game</th>
                         <th scope="col">Genre</th>
@@ -105,14 +100,11 @@
             </table>
         </div>
     </section>
-
-    <!-- TRENDING GAMES -->
     <section class="container pb-5">
         <h2 class="mb-3">Trending This Month</h2>
         <p class="text-muted mb-4">Games gaining attention recently, either from updates, DLCs, or new releases.</p>
 
         <div class="row g-4">
-            <!-- Card 1 -->
             <div class="col-md-4">
                 <div class="card h-100 shadows">
                     <div class="card-body">
@@ -130,8 +122,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Card 2 -->
             <div class="col-md-4">
                 <div class="card h-100 shadows">
                     <div class="card-body">
@@ -149,8 +139,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Card 3 -->
             <div class="col-md-4">
                 <div class="card h-100 shadows">
                     <div class="card-body">

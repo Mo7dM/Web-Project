@@ -3,9 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Games Station</title>
+    <link rel="icon" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="firstlyCheck()">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dangera">
+    <div class="container">
+        <a class="navbar-brand Home bangers-regular" href="home.html">
+            <span class="G">G</span>ame<br>&nbsp;&nbsp;&nbsp;<span class="S">S</span>tation
+        </a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">Game News</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="database.html">Game Database</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="ratings.html">Game Rating</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="makeof.html">Make of Site</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="our-story.html">Our Story</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link no-hover">Welcome <span id="user">Guest</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="py-4 bg-info text-light">
+    <div class="container text-center">
+        <h1 class="display-3 montserrat-a">
+            Make of <strong>Game Station</strong>
+        </h1>
+        <p class="lead mt-3">
+            How we built Game Station
+        </p>
+    </div>
+</header>
+
+<main class="py-5">
+    <div class="container">
+        <section class="mb-5">
+            <p class="text-center mx-auto" style="max-width: 700px;">
+                This page shows some of the references and design steps we used while creating
+                <strong>Game Station</strong>. Each image below represents a part of our process,
+                from initial sketches and wireframes to layout inspiration and final UI polish.
+            </p>
+        </section>
+        <section>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/Home.png" class="figure-img img-fluid rounded shadow hover" alt="Homepage wireframe">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 1:</strong> Homepage layout used to plan the main structure of the site.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/news.png" class="figure-img img-fluid rounded shadow hover" alt="news">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 2:</strong> Design for the Game News section.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/Database.png" class="figure-img img-fluid rounded shadow hover" alt="Database layout">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 3:</strong> Game Database page concept showing how games are listed.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/Rating.png" class="figure-img img-fluid rounded shadow hover" alt="Rating layout">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 4:</strong> Rating page layout used for user-style game reviews.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/makeof.png" class="figure-img img-fluid rounded shadow hover" alt="make of">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 5:</strong> Mockup for the news section and visual hierarchy.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure class="figure text-center">
+                        <img src="images/story.png" class="figure-img img-fluid rounded shadow hover" alt="story">
+                        <figcaption class="figure-caption text-muted">
+                            <strong>Figure 6:</strong> Final reference combining layout, colors, and style.
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <div class="card p-4 shadow-sm mx-auto" style="max-width: 900px; border-radius: 12px;">
+
+        <h3 class="mb-3 montserrat-a">What We Created</h3>
+        <p>
+            We built <strong>Game Station</strong> to bring together everything related to discovering
+            and understanding video games. The website includes pages for news, ratings, and a game
+            database, all organized in a clean and modern layout. We used a bold red color for the
+            top navigation bar to match the energetic feel of gaming websites, and added a blue
+            gradient bar underneath to create a smooth transition and stronger visual identity.
+        </p>
+
+        <h3 class="mt-4 mb-3 montserrat-a">Design Choices</h3>
+        <p>
+            Throughout the website, we used <strong>Bootstrap</strong> to structure the layout and keep
+            everything responsive. We customized colors, shadows, rounded corners, and hover effects
+            using our own CSS. The Bangers font was chosen for the logo to give a playful gaming look,
+            while Montserrat was used for clean and readable text. Shadows and rounded cards were added
+            to make the sections feel polished and professional.
+        </p>
+
+        <h3 class="mt-4 mb-3 montserrat-a">Features We Developed</h3>
+        <p>
+            We used <strong>JavaScript</strong> for features like form validation and dynamic welcome
+            messages. Tables, images, and game cards were arranged using the Bootstrap grid to ensure
+            they stay aligned on different screen sizes. Every page was designed to feel consistent
+            and easy to navigate.
+        </p>
+
+        <h3 class="mt-4 mb-3 montserrat-a">Tools That Helped Us</h3>
+        <p>
+            During development, we used <strong>ChatGPT</strong> to fix layout issues, understand certain
+            coding problems,text generation and generate clean solutions for HTML, CSS, and JavaScript. This helped us
+            speed up development while learning new techniques along the way.
+        </p>
+
+    </div>
+    <br>
+    <section class="mt-5">
+    <h2 class="h4 montserrat-a text-center mb-4">Team Contributions</h2>
+
+    <div class="card p-4 shadow-sm mx-auto" style="max-width: 900px; border-radius: 12px;">
+        <div class="mb-4">
+            <h5 class="mb-1">1. Mohamed Kadhem</h5>
+            <p class="text-muted">
+                Worked on the main programming and functionality of the website.
+                Handled JavaScript validation, linking pages together, fixing broken layouts, and debugging issues during development.
+                Also helped apply Bootstrap components correctly across different pages.
+            </p>
+        </div>
+        <div class="mb-4">
+            <h5 class="mb-1">2. Ali Hussain</h5>
+            <p class="text-muted">
+                Focused on designing the structure and story of the website, including planning how each page should look, choosing colors, fonts, and organizing the overall layout.
+                Created early sketches and wireframes that guided the final design.
+            </p>
+        </div>
+        <div class="mb-4">
+            <h5 class="mb-1">3. Sayed Mohamed Alewdae</h5>
+            <p class="text-muted">
+                Worked on content creation, writing descriptions for games, adjusting news sections, and making sure each page had clear and readable text.
+                Also helped test the website to ensure consistency across different screens.
+            </p>
+        </div>
+        <div>
+            <h5 class="mb-1">4. Maryam Alyasi</h5>
+            <p class="text-muted">
+                Handled styling and visual elements, such as editing images, arranging them in the database and news sections, and applying CSS adjustments like shadows, spacing, and UI improvements.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="mt-5">
+    <h2 class="h4 montserrat-a text-center mb-4">Project References</h2>
+
+    <div class="card p-4 shadow-sm mx-auto" style="max-width: 900px; border-radius: 12px;">
+        <p class="text-muted mb-0" style="line-height: 1.8;">
+
+            • Japan, S. Kobari (2025) <i>State of Play Japan airs today, Tuesday, November 11</i>. PlayStation Blog.  
+            Available at: https://blog.playstation.com/2025/11/10/state-of-play-japan-airs-this-tuesday-november-11/  
+            (Accessed: 06 December 2025).<br><br>
+
+            • Joe Skrebels, X.W.E.-C. (2025) <i>Gamescom 2025: Meet the teams bringing their games to the Xbox booth</i>.  
+            Xbox Wire. Available at: https://news.xbox.com/en-us/2025/08/18/gamescom-2025-meet-the-teams-xbox-booth/  
+            (Accessed: 06 December 2025).<br><br>
+
+            • <i>ChatGPT</i> (no date). Available at: https://chatgpt.com/ (Accessed: 07 December 2025).<br><br>
+
+            • <i>Fortnite</i> (2017). IMDb. Available at: https://www.imdb.com/title/tt8020008/  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>Elden Ring</i> (2022). IMDb. Available at: https://www.imdb.com/title/tt10562854/  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>Bloodborne</i> (2015). IMDb. Available at: https://www.imdb.com/title/tt3814634/  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>Elden Ring Nightreign is a multiplayer survival spin-off revealed at the Game Awards</i> (no date).  
+            CNET. Available at: https://www.cnet.com/tech/gaming/elden-ring-nightreign-is-a-multiplayer-survival-spinoff-revealed-at-the-game-awards/  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>Chapter 7 of Fortnite is now available</i> (2025). Instant Gaming News.  
+            Available at: https://news.instant-gaming.com/en/articles/16368-chapter-7-of-fortnite-is-now-available  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>"REDSEC" startet heute – der neue free battle royale von BF6</i> (no date). DLCompare.  
+            Available at: https://www.dlcompare.de/spiele-news/redsec-startet-heute-der-neue-free-battle-royale-von-bf6  
+            (Accessed: 07 December 2025).<br><br>
+
+            • <i>Forza Horizon 6</i> (no date). Steam Store Page.  
+            Available at: https://store.steampowered.com/app/2483190/Forza_Horizon_6/<br><br>
+
+            • Hundal, T. (2025) <i>Forza Horizon 6 is giving fans what they want</i>. The Autopian.  
+            Available at: https://www.theautopian.com/forza-horizon-6-is-giving-the-fans-what-they-want-an-open-world-racing-game-set-in-japan/  
+            (Accessed: 07 December 2025).<br><br>
+
+            • Nzxt. (2025) <i>Call of Duty: Black Ops 7 — Beta, gameplay, and PC requirements</i>.  
+            Available at: https://nzxt.com/blogs/news/call-of-duty-black-ops-7-beta-pc-requirements  
+            (Accessed: 07 December 2025).
+
+        </p>
+    </div>
+</section>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/script.js"></script>
 </body>
 </html>

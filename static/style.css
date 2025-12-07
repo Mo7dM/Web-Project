@@ -5,22 +5,14 @@
     border-radius: 5px;
     transition: transform 0.3s ease-in;
 }
-/* .imgs:hover{
-    transform: scale(1.015);
-} */
+
 .signup{
     transition: transform 0.15s ease-in;
 }
 .signup:hover{
     transform: scale(1.03);
 }
-/* .formt{
-    transition: transform 0.3s ease-in;
-}
-.formt:hover{
-    transform: scale(1.03) ;
-    color: black;
-} */
+
 #close-notification{
         background: none;
         border: none;
@@ -48,6 +40,7 @@
 }
 .hidden{
     display: none;
+    pointer-events: none !important;
 }
 .card img {
   width: 100%;
@@ -101,9 +94,7 @@
 }
 
 body{
-    /* background-image: image-set("https://image.api.playstation.com/vulcan/img/rnd/202111/0506/hcFeWRVGHYK72uOw6Mn6f4Ms.jpg");
-    background-position: center; */
-    background-color: #f1fff8 !important;
+    background-color: #e8e8e8 !important;
 }
 .navbar.bg-dangera {
     background-color: #160929  !important;
@@ -117,7 +108,7 @@ body{
     color: #fff;
 }
 .overview-box{
-    font-size: 26px; /* try 20–22px */
+    font-size: 26px;
     line-height: 1.6;
 }
 .carousel,
@@ -127,18 +118,16 @@ body{
     border-radius: 20px;
     overflow: hidden;
 }
-/* Parent slide */
+
 .hover-card {
     position: relative;
     overflow: hidden;
 }
 
-/* Image dims on hover */
 .hover-card img {
     transition: 0.4s ease;
 }
 
-/* Text overlay (hidden by default) */
 .hover-text {
     position: absolute;
     top: 50%;
@@ -178,7 +167,6 @@ body{
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
 .news-page header.bg-info {
     background: linear-gradient(90deg, #2563eb, #06b6d4) !important;
     padding: 3rem 0;
@@ -192,7 +180,7 @@ body{
 }
 
 .shadows{
-    box-shadow: 7px 10px 30px rgba(0,0,0,0.55);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.55);
 }
 
 .news-card {
@@ -207,14 +195,12 @@ body{
     transition: 0.2s ease;
 }
 
-/* IMAGE */
 .news-card .news-img {
     width: 100%;
-    height: 60%;          /* Adjust image height */
+    height: 60%;
     object-fit: cover;
 }
 
-/* TEXT AREA */
 .news-card .news-info {
     padding: 1.2rem;
     display: flex;
@@ -233,22 +219,14 @@ body{
     margin-bottom: 0;
 }
 
-/* HOVER EFFECT */
 .news-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 26px 50px rgba(0,0,0,0.7);
 }
 
-/* ======================
-   BIG CARDS (TOP ROW)
-====================== */
 .news-card.big {
     height: 470px;
 }
-
-/* ======================
-   SCROLL ROW
-====================== */
 
 .scroll-row-container {
     overflow-x: auto;
@@ -266,8 +244,6 @@ body{
     width: 330px;
     height: 360px;
 }
-
-/* SMOOTH SCROLLBAR */
 .scroll-row-container::-webkit-scrollbar {
     height: 10px;
 }
@@ -279,4 +255,48 @@ body{
 
 .scroll-row-container::-webkit-scrollbar-track {
     background: #1e293b;
+}
+.hover{
+    transition: transform 0.3s ease;
+}
+.hover:hover{
+    transform: scale(1.03);
+}
+.navbar-nav .nav-link:hover:not(.no-hover) {
+    transform: scale(1.03);
+    color: #bfbfbf !important;
+    transition: 0.15s ease-in-out;
+}
+
+.navbar-nav .nav-link.no-hover,
+.navbar-nav .nav-link.no-hover:hover,
+.navbar-nav .nav-link.no-hover:focus {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    transform: none !important;
+}
+.shadows2 {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.game-table {
+    margin: 0 !important;
+}
+
+.game-table thead {
+    background: #f8f9fa;
+    font-weight: 700;
+}
+
+.game-table th, 
+.game-table td {
+    padding: 14px 16px;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 8px 12px;
 }

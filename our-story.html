@@ -3,9 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Story – Game Station</title>
+
+    <link rel="icon" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body onload="firstlyCheck()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dangera">
+        <div class="container">
+            <a class="navbar-brand Home bangers-regular" href="home.html"><span class="G">G</span>ame<br>&nbsp;&nbsp;&nbsp;<span class="S">S</span>tation</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="news.html">Game News</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="database.html">Game Database</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="ratings.html">Game Rating</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="makeof.html">Make of Site</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link" href="our-story.html">Our Story</a> </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <a class="nav-link no-hover">Welcome <span id="user">Guest</span></a> </li>
+            </ul>
+    </nav>
+<header class="py-4 bg-info text-light text-center">
+    <h1 class="display-4 montserrat-a">Our Story</h1>
+    <p class="lead">The full story of how we built Game Station</p>
+</header>
+<main class="container py-5">
+    <div class="card p-4 shadow-sm mx-auto" style="max-width: 900px; border-radius: 12px; line-height: 1.75;">
+
+        <h3 class="montserrat-a mb-3">Our Story (Game Station)</h3>
+
+        <p>
+            In this project, our team collaborated to design and build a multi-page Game Rating Website where users
+            can explore trending games, check gaming news, browse a full game database, and submit their own ratings.
+            Before we started coding, we sketched mock-ups for every page to visualize layouts, color choices, icons,
+            and overall user flow. These early sketches helped us stay organized, avoid confusion, and keep all pages
+            consistent.
+        </p>
+
+        <p>
+            We used HTML, CSS, and Bootstrap to build a clean, modern, and responsive interface that works smoothly on
+            both desktop and mobile screens. Our main goal was to design a site that feels easy to navigate, visually
+            appealing, and fun for anyone interested in discovering or rating games.
+        </p>
+
+        <h4 class="montserrat-a mt-4 mb-2">Challenges We Faced</h4>
+
+        <p>
+            Throughout development, we ran into a number of issues. One of the biggest challenges was making sure
+            all pages were properly linked so that the navigation bar worked everywhere. Sometimes, incorrect file
+            paths caused pages or images to break, and we had to carefully check the folder structure to fix them.
+        </p>
+
+        <p>
+            Making the website responsive was another challenge. Some elements looked misaligned on smaller screens,
+            especially game images and text inside the database. By using Bootstrap’s grid system and responsive tools,
+            we were able to solve most of these issues.
+        </p>
+
+        <p>
+            We also dealt with problems related to image formatting, like unsupported formats or incorrect dimensions,
+            which caused certain images not to load. Fixing these required multiple tests and adjustments, but each
+            issue helped us improve our troubleshooting skills.
+        </p>
+
+        <h4 class="montserrat-a mt-4 mb-2">Project Work & Page Breakdown</h4>
+
+        <p>
+            Each page in the website has its own purpose and plays a role in the full user experience.
+        </p>
+
+        <p><strong>• Game Station (Home Page):</strong><br>
+            The homepage welcomes users and includes an Upcoming Events section showing the most highly anticipated
+            gaming events. It also contains a registration form with validation for names, mobile number, and email.
+            The form shows error messages when inputs are incorrect, helping users fill it out properly.
+        </p>
+
+        <p><strong>• Top Gaming News Page:</strong><br>
+            This page highlights the latest updates from the gaming world, including trending releases and major
+            announcements. Each piece of news includes a title, summary, and image to make browsing easier.
+        </p>
+
+        <p><strong>• Game Database Page:</strong><br>
+            A list of games displaying the genres, the platforms it’s available on, both their active and peak player
+            counts, helping users discover new titles and see how active they are before making a purchase.
+        </p>
+
+        <p><strong>• Rating Page:</strong><br>
+            Users can share their feedback and rate each game on a scale of 1 to 10. These ratings make the website
+            more engaging for the average user and give a stronger sense of involvement in the gaming community; it
+            could help future users discover their next favorite game by highlighting the top-rated titles in each
+            genre.
+        </p>
+
+        <h4 class="montserrat-a mt-4 mb-2">Technical Learning</h4>
+
+        <p>
+            This project significantly improved our front-end development skills. We learned how to structure
+            multi-page websites, validate forms using JavaScript, and use Bootstrap to build cleaner and more
+            responsive layouts.
+        </p>
+
+        <p>
+            We also learned to fix broken links, handle image loading issues, and design better user interactions
+            through simple and clean UI components. Testing on different screens taught us how important responsiveness
+            and consistency are when building real websites. Overall, this project gave us hands-on experience creating
+            a functional and user-friendly website.
+        </p>
+
+    </div>
+</main>
+
+<script src="script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
